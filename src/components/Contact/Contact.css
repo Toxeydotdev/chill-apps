@@ -1,0 +1,193 @@
+.contact-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+  color: #2d3436;
+}
+
+.contact-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.info-card,
+.hours-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.info-card h3,
+.hours-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+.info-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.maps-link {
+  display: inline-block;
+  background: #495057;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.maps-link:hover {
+  background: #6c757d;
+}
+
+.info-card a[href^="tel:"] {
+  color: #495057;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.info-card a[href^="tel:"]:hover {
+  text-decoration: underline;
+  color: #6c757d;
+}
+
+.call-note {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+.hours-and-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hour-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.hour-row.today {
+  background: #e3f2fd;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: bold;
+  border-bottom: none;
+}
+
+.day {
+  font-weight: 500;
+}
+
+.time {
+  color: #495057;
+  font-weight: 500;
+}
+
+.visit-note {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.visit-note h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+.visit-note p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.8;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 0;
+  }
+
+  .contact-section .container {
+    padding: 0 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .info-card,
+  .hours-card,
+  .features-card,
+  .visit-note {
+    padding: 1.5rem;
+  }
+
+  .hour-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .hour-row.today {
+    padding: 1rem;
+  }
+
+  .features-list {
+    gap: 0.5rem;
+  }
+
+  .feature-item {
+    font-size: 0.9rem;
+  }
+}

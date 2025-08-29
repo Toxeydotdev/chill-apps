@@ -1,0 +1,131 @@
+.home-page {
+  min-height: 100vh;
+}
+
+.single-column-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.hero-section {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.contact-section-wrapper {
+  background: #f8f9fa;
+  padding: 2rem;
+}
+
+/* Override Hero component styles for single column layout */
+.hero-section .hero {
+  background: transparent;
+  min-height: auto;
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-section .hero-content {
+  max-width: none;
+  width: 100%;
+}
+
+.hero-section .hero-image {
+  margin-top: 1rem;
+  min-height: 120px;
+}
+
+.hero-section .food-placeholder {
+  font-size: 3rem;
+}
+
+/* Override Contact component styles for single column layout */
+.contact-section-wrapper .contact-section {
+  background: transparent;
+  padding: 0;
+  color: #2d3436;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-section-wrapper .contact-section .container {
+  max-width: none;
+  padding: 0;
+}
+
+.contact-section-wrapper .contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-section-wrapper .contact-intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-section-wrapper .contact-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-section-wrapper .hours-and-features {
+  gap: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .contact-section-wrapper .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section,
+  .contact-section-wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .hero-section .hero {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section,
+  .contact-section-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .hero-section .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section .food-placeholder {
+    font-size: 2.5rem;
+  }
+
+  .contact-section-wrapper .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-section-wrapper .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
