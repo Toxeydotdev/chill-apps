@@ -151,6 +151,99 @@
   text-decoration: underline;
 }
 
+/* New layout for detailed list with prices */
+.menu-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+}
+
+.menu-sidebar {
+  position: sticky;
+  top: 80px;
+  align-self: start;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.menu-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-sidebar li + li {
+  margin-top: 0.5rem;
+}
+
+.menu-sidebar a {
+  color: #495057;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.menu-sidebar a:hover {
+  text-decoration: underline;
+}
+
+.menu-content {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.menu-category-block + .menu-category-block {
+  margin-top: 1.5rem;
+}
+
+.menu-category-title {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin: 0 0 0.75rem 0;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.menu-item-name {
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.menu-item-price {
+  color: #495057;
+  font-weight: 600;
+}
+
+.menu-item-desc {
+  color: #636e72;
+  margin-top: 0.25rem;
+}
+
 @media (max-width: 768px) {
   .menu-section {
     padding: 3rem 0;
@@ -177,5 +270,18 @@
   .dish-card,
   .category-card {
     padding: 1.5rem;
+  }
+
+  .menu-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-sidebar {
+    position: static;
+    order: 2;
+  }
+
+  .menu-content {
+    order: 1;
   }
 }
