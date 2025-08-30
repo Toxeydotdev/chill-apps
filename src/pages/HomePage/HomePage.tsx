@@ -1,8 +1,8 @@
-import Contact from "../../components/Contact";
-import Hero from "../../components/Hero";
+import { Contact } from "@/components/Contact/Contact";
+import { Hero } from "@/components/Hero/Hero";
 import "./HomePage.css";
 
-const HomePage = () => {
+export const HomePage = () => {
   return (
     <div className="home-page">
       <div className="single-column-layout">
@@ -16,5 +16,3 @@ const HomePage = () => {
     </div>
   );
 };
-
-export default HomePage;

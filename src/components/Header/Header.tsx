@@ -1,37 +1,52 @@
 import { Link } from "@tanstack/react-router";
 import "./Header.css";
 
-const Header = () => {
-  const scrollToContact = () => {
-    const section = document.getElementById("contact");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+export const Header = () => {
   return (
     <header className="header">
-      <div className="nav-container">
-        <nav className="nav">
-          <Link to="/" className="nav-link">
-            Visit Us
+      <div className="brand-row">
+        <div className="logo">
+          <Link to="/" className="logo-link">
+            <h1>La Fuente</h1>
+            <span className="tagline">Authentic Mexican Cuisine in Renton</span>
           </Link>
-          <Link to="/menu" className="nav-link">
+        </div>
+        <nav className="nav">
+          <Link
+            to="/"
+            className="nav-link"
+            activeProps={{ className: "nav-link active" }}
+            activeOptions={{ exact: true }}
+          >
+            Home
+          </Link>
+          <Link
+            to="/menu"
+            className="nav-link"
+            activeProps={{ className: "nav-link active" }}
+          >
             Menu
           </Link>
-          <button onClick={scrollToContact} className="nav-link contact-btn">
-            Contact
-          </button>
         </nav>
       </div>
-      <div className="logo">
-        <Link to="/" className="logo-link">
-          <h1>La Fuente</h1>
-          <span className="tagline">Authentic Mexican Cuisine</span>
-        </Link>
+      <div className="ext-links" aria-label="Ordering and reviews">
+        <a
+          className="ext-link"
+          href="#"
+          aria-label="Yelp (placeholder)"
+          title="Yelp (placeholder)"
+        >
+          Yelp
+        </a>
+        <a
+          className="ext-link"
+          href="#"
+          aria-label="DoorDash (placeholder)"
+          title="DoorDash (placeholder)"
+        >
+          DoorDash
+        </a>
       </div>
     </header>
   );
 };
-
-export default Header;

@@ -1,3 +1,7 @@
+import { Footer } from "@/components/Footer/Footer";
+import { Header } from "@/components/Header/Header";
+import { HomePage } from "@/pages/HomePage/HomePage";
+import { MenuPage } from "@/pages/MenuPage/MenuPage";
 import {
   createRootRoute,
   createRoute,
@@ -5,9 +9,6 @@ import {
   Outlet,
 } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import { HomePage, MenuPage } from "./pages";
 
 // Root route
 const rootRoute = createRootRoute({

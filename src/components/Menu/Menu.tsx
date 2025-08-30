@@ -1,6 +1,6 @@
 import "./Menu.css";
 
-const Menu = () => {
+export const Menu = () => {
   const popularDishes = [
     {
       name: "Carne Asada",
@@ -133,5 +133,3 @@ const Menu = () => {
     </section>
   );
 };
-
-export default Menu;

@@ -1,6 +1,6 @@
 import "./Contact.css";
 
-const Contact = () => {
+export const Contact = () => {
   const hours = [
     { day: "Monday", time: "12:00 PM - 9:00 PM" },
     { day: "Tuesday", time: "11:00 AM - 9:00 PM" },
@@ -74,19 +74,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
-        <div className="visit-note">
-          <h4>🎉 Experience La Fuente</h4>
-          <p>
-            Join us for an authentic Mexican dining experience! Whether you're
-            looking for a family dinner, a casual meal with friends, or
-            delicious takeout, La Fuente welcomes you with traditional flavors
-            and warm hospitality.
-          </p>
-        </div>
       </div>
     </section>
   );
 };
-
-export default Contact;
