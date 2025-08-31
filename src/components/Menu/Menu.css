@@ -1,6 +1,8 @@
 .menu-section {
   padding: 4rem 0;
   background-color: #f8f9fa;
+  /* If navigated via #menu, ensure visibility below sticky header */
+  scroll-margin-top: 90px;
 }
 
 .menu-section .container {
@@ -13,7 +15,7 @@
   text-align: center;
   font-size: 2.5rem;
   color: #2d3436;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .menu-intro {
@@ -205,6 +207,11 @@
   margin: 0 0 0.75rem 0;
   border-bottom: 2px solid #e9ecef;
   padding-bottom: 0.5rem;
+}
+
+/* Ensure in-page anchors don't get hidden behind the sticky header */
+.menu-category-block {
+  scroll-margin-top: 90px;
 }
 
 .menu-items {

@@ -29,7 +29,6 @@ export const Icon: React.FC<Props> = ({
         />
       );
     case "doordash":
-      // Use a generic delivery icon for DoorDash link
       return (
         <SiDoordash
           size={size}

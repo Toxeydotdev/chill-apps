@@ -1,18 +1,11 @@
-import { DOORDASH_URL } from "@/config/links";
 import { menuData, type MenuCategory } from "@/data/menu";
 import "./Menu.css";
 
 export const Menu = () => {
-  const doordashUrl = DOORDASH_URL;
-
   return (
     <section id="menu" className="menu-section">
       <div className="container">
         <h2>Menu</h2>
-        <p className="menu-intro">
-          Listed are menu categories with item names and prices. For live
-          updates, see DoorDash.
-        </p>
 
         <div className="menu-layout">
           <aside className="menu-sidebar">
@@ -59,16 +52,6 @@ export const Menu = () => {
               );
             })}
           </div>
-        </div>
-
-        <div className="menu-note">
-          <p>
-            View current items and prices on DoorDash:{" "}
-            <a href={doordashUrl} target="_blank" rel="noopener noreferrer">
-              Order on DoorDash
-            </a>
-            . Prices and offerings may vary by platform and location.
-          </p>
         </div>
       </div>
     </section>
