@@ -97,11 +97,22 @@
   font-size: 0.9rem;
   border-bottom: 2px solid transparent;
   padding-bottom: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .ext-link:hover {
   color: #212529;
   border-bottom-color: #adb5bd;
+}
+
+.ext-icon {
+  display: inline-block;
+  color: #495057;
+}
+.ext-link:hover .ext-icon {
+  color: #212529;
 }
 
 @media (max-width: 768px) {

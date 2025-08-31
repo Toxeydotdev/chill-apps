@@ -1,3 +1,5 @@
+import { Icon } from "@/components/Icons/Icon";
+import { DOORDASH_URL, YELP_URL } from "@/config/links";
 import { Link } from "@tanstack/react-router";
 import "./Header.css";
 
@@ -32,19 +34,25 @@ export const Header = () => {
       <div className="ext-links" aria-label="Ordering and reviews">
         <a
           className="ext-link"
-          href="#"
-          aria-label="Yelp (placeholder)"
-          title="Yelp (placeholder)"
+          href={YELP_URL}
+          aria-label="Yelp"
+          title="Yelp"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Yelp
+          <Icon name="yelp" className="ext-icon" />
+          <span className="ext-text">Yelp</span>
         </a>
         <a
           className="ext-link"
-          href="#"
-          aria-label="DoorDash (placeholder)"
-          title="DoorDash (placeholder)"
+          href={DOORDASH_URL}
+          aria-label="DoorDash"
+          title="DoorDash"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          DoorDash
+          <Icon name="doordash" className="ext-icon" />
+          <span className="ext-text">DoorDash</span>
         </a>
       </div>
     </header>
