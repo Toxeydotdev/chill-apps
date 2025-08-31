@@ -284,8 +284,7 @@
   }
 
   .menu-sidebar {
-    position: static;
-    order: 2;
+    display: none;
   }
 
   .menu-content {
