@@ -7,7 +7,6 @@ import {
   createRouter,
   Outlet,
 } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 
 // Root route
 const rootRoute = createRootRoute({
@@ -18,7 +17,7 @@ const rootRoute = createRootRoute({
         <Outlet />
       </main>
       {/* <Footer /> */}
-      <TanStackRouterDevtools />
+      {/* <TanStackRouterDevtools /> */}
     </>
   ),
 });
